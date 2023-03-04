@@ -1,0 +1,23 @@
+@use "variables" as v;
+@use "utils" as u;
+
+.container {
+  padding-top: unset;
+  padding-bottom: unset;
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 64px auto;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  animation-fill-mode: forwards;
+
+  overflow: hidden;
+
+  font-size: u.rem(20);
+
+  @media (max-width: 856px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}

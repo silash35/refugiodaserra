@@ -1,0 +1,6 @@
+// Trabalhar diretamente com REM é complicado.
+// Essa função serve para a gente poder utilizar px e converter para rem em build time
+$browser-default-size: 16;
+@function rem($pixels) {
+  @return #{$pixels/$browser-default-size}rem;
+}

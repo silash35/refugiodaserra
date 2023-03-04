@@ -1,0 +1,12 @@
+@use "variables" as v;
+@use "utils";
+
+.start {
+  position: relative;
+  flex-direction: row;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
